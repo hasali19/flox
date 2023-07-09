@@ -1,12 +1,9 @@
 [package]
-name = "flox"
+name = "flutter-codec"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[workspace]
-members = ["crates/*"]
-exclude = ["example"]
-
 [dependencies]
+byteorder = "1.4"

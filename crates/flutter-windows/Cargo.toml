@@ -1,0 +1,20 @@
+[package]
+name = "flutter-windows"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+flutter-desktop-messenger = { path = "../flutter-desktop-messenger" }
+flutter-windows-sys = { path = "../flutter-windows-sys" }
+raw-window-handle = "0.5"
+
+[dependencies.windows]
+version = "0.48.0"
+features = [
+    "Win32_Foundation",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+]

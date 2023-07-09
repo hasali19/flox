@@ -1,12 +1,12 @@
 [package]
-name = "flox"
+name = "flutter-windows-sys"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[workspace]
-members = ["crates/*"]
-exclude = ["example"]
-
 [dependencies]
+
+[build-dependencies]
+bindgen = "0.65"
+which = "4.4"
